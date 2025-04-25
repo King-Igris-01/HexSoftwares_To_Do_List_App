@@ -77,12 +77,54 @@ ul li{
     border: 0.125px solid rgb(145, 33, 233);
     padding: 6px 12px;
     background-color: white;
-    color: black;
-    
+    /*color: black;*/
+    display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background:none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10%;
 
 }
+
+.deleteBtn{
+    color: red
+}
+
+.editBtn{
+    color: rgb(22, 243, 22)
+}
+
+.editBtn:hover{
+    color:white;
+    background-color: rgb(41, 241, 41)
+}
+
+.deleteBtn:hover{
+    color:white;
+    background-color: red;
+}
+
+ul li:hover{
+    background-color: rgb(178, 210, 243);
+}
+
+
+
 
 
 
